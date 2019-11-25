@@ -32,7 +32,7 @@ print('threshold >> ', max_t)
 out[out < max_t] = 0
 out[out >= max_t] = 255
 
-cv2.imwrite('big_jin_binary.jpg', out)
+cv2.imwrite('Q4_out.jpg', out)
 cv2.imshow('out', out)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

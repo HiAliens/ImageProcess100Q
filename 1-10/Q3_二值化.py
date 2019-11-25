@@ -22,7 +22,7 @@ out = out.astype(np.uint8)
 out[out < 127] = 0  # 只对真值进行赋值
 out[out >= 127] = 255
 
-cv2.imwrite('binary.jpg', out)
+cv2.imwrite('Q3_out.jpg', out)
 cv2.imshow('binary', out)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
